@@ -1,0 +1,366 @@
+.selectTabs {
+  display: inline-block;
+  color: #7C7C7D;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 0 2vw;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.checkBox_outer {
+  display: inline-block;
+  min-width: 15vw;
+}
+
+.sectionOuter_spacing {
+  padding: 0;
+  padding-right: 30vw;
+}
+
+.othersOuter_spacing {
+  padding-right: 56vw;
+}
+
+.customizedChannel {
+  background: #468DCB;
+  border: 1px solid #468DCB;
+  color: #FFFFFF !important;
+}
+
+.channelMargin {
+  margin: 10px 5px;
+}
+
+.customizedRemove {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.icons_outer {
+  height: 15vh;
+  width: 12vw;
+  text-align: center;
+  display: inline-block;
+  padding: 5vh 0;
+  padding-bottom: 0;
+  border: 1px solid;
+  margin-right: 2vw;
+  margin-top: 4vh;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #7C7C7D;
+}
+
+.icons_outer .iconText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.textFont {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+}
+
+.fontSize17 {
+  font-size: 17px;
+}
+
+.errorTexts {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ff0033;
+}
+
+.customizedErrors {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.tabs_borderBottom {
+  border-bottom: 2px solid #7C7C7D;
+}
+
+.selectTabs_outer {
+  line-height: 5vh;
+  padding: 0 20px;
+  padding-top: 2vh;
+  background: #F8F9FB;
+}
+
+.campaignText_outer {
+  background: #F8F9FB;
+  padding: 0 20px;
+}
+
+.display_Inline {
+  display: inline-flex;
+}
+
+.displayInline_block {
+  display: inline-block;
+}
+
+.rowCol_Class {
+  width: 13vw !important;
+}
+
+.dateOuter_flex {
+  width: 100%;
+  height: 20vh;
+}
+
+.FlightSection_buttonOuter {
+    margin: 10vh 0px;
+}
+
+.customizedTextBox {
+  padding: 5px 10px;
+}
+
+.dateInput_outer {
+  min-width: 10vw;
+  margin-left: 2vw;
+  display: inline-table;
+}
+
+.budget_outer {
+  margin-right: 2vw;
+}
+
+.stepTrackers_rightPadding {
+  padding-right: 6vw;
+}
+
+.customized_stepButtons {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 7px 22px;
+  background: #468DCB;
+  border: none;
+  outline: none;
+  color: #FFFFFF !important;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customized_stepButtons:active {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: #FFFFFF !important;
+  color: #468DCB !important;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customezed_checkBox {
+  text-transform: capitalize !important;
+}
+
+.RightButton_align {
+  float: right;
+}
+
+.admin_appBar_class_iconElementLeft {
+  height: 8vh;
+  display: inline-flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.admin_appBar_class_iconElementRight  {
+  float: right;
+  height: 8vh;
+  align-items: center;
+}
+
+.admin_appBar_class {
+  background: #468DCB !important;
+  overflow: hidden !important;
+  height: 8vh;
+}
+
+.paddingLeft_13 {
+  padding-left: 5vw !important;
+}
+
+.subHeader_tabs {
+  display: inline-flex;
+  width: 8vw;
+  justify-content: center;
+  line-height: 5vh;
+  color: #468DCB;
+  border-bottom: 3px solid #D3D3D3;
+  cursor: pointer;
+  outline: none;
+}
+
+.borderBottom {
+  border-bottom: 3px solid #468DCB !important;
+}
+
+.subHeader_tabs:active {
+  border-bottom: 3px solid #468DCB;
+  background: #FFFFFF;
+  color: #468DCB;
+  outline: none;
+}
+
+.admin_img_icon_size{
+  height: 30px;
+  width: 30px;
+}
+
+.list_img_icon_size {
+  height: 50px;
+  width: 50px;
+}
+
+.custom_width {
+  min-width: 13vw;
+}
+
+.admin_content_class {
+  padding: 24px;
+  padding-left: 5vw;
+}
+
+.add_background {
+  background: #EE1C25 !important;
+  text-decoration: none !important;
+  color: #FFFFFF !important;
+}
+
+.alignCenter {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.admin_displayInline {
+  display: inline-block;
+}
+
+.admin_marginLeft {
+  margin-left: 208px;
+}
+
+.admin_dialogbuttonClass {
+  background: #FFFFFF !important;
+  color: #EE1C25 !important;
+}
+
+.admin_noteButton {
+  color: #FFFFFF !important;
+}
+
+.admin_noteMargin {
+  margin: 0px 5vw;
+}
+
+.admin_noteFont {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.admin_notefontSize {
+  font-size: 16px;
+}
+
+.admin_hightLight {
+  color: #468DCB !important;
+}
+
+.customizedMsgs {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  height: 30vh;
+  width: 100%;
+  padding-right: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowCol_content {
+  width: 50vw !important;
+}
+
+@media screen and (max-width: 992px) {
+  .admin_notefontSize {
+    font-size: 13px;
+  }
+  .admin_noteMargin {
+    margin: 0px 2%;
+    margin-left: 5%;
+  }
+  .mobile_appbar {
+    background: #468DCB !important;
+  }
+  .icons_outer {
+    height: 12vh;
+    width: 20vw;
+  }
+  .sectionOuter_spacing {
+    padding: 0;
+    padding-right: 5vw;
+  }
+  .checkBox_outer {
+    display: inline-block;
+    min-width: 21vw;
+  }
+  .removeIconCol {
+    max-width: 5vw;
+  }
+  .rowCol_Class {
+    width: 20vw !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tabContent_outer {
+    padding: 0 25px;
+  }
+  .mobile_icon_outer {
+    width: 65px !important;
+    height: 65px !important;
+  }
+  .rowCol_Class {
+    padding: 0 !important;
+  }
+  .subHeader_tabs {
+    width: 25vw;
+  }
+  .selectTabs {
+    font-size: 11px;
+  }
+
+  .icons_outer {
+    width: 40vw;
+  }
+
+  .sectionOuter_spacing {
+    padding: 0;
+  }
+
+  .checkBox_outer {
+    display: inline-block;
+    min-width: 60vw;
+  }
+
+  .stepTrackers_rightPadding {
+    padding: 2vh 0;
+    padding-right: 6vw;
+  }
+
+  .FlightSection_buttonOuter {
+    margin: 10vh 0px;
+    width: 90vw;
+  }
+}
