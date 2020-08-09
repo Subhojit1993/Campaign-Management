@@ -7,7 +7,7 @@ export const FETCH_TRACKERS_FAILURE = 'FETCH_TRACKERS_FAILURE';
 export const CREATE_TRACKER_SUCCESS = 'CREATE_TRACKER_SUCCESS';
 export const REMOVE_TRACKER_SUCCESS = 'REMOVE_TRACKER_SUCCESS';
 // tracker url set
-const trackerUrl = `http://localhost:3002/trackers`;
+const trackerUrl = `https://trackers-db-1021.herokuapp.com/trackers`;
 
 export const fetchTrackersBegin = () => ({
   type: FETCH_TRACKERS_BEGIN
