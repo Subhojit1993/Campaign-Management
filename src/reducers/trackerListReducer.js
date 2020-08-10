@@ -22,7 +22,8 @@ export default function productReducer(state = initialState, action) {
       return {
         ...state,
         loading: false,
-        items
+        items,
+        error: null
       };
       
     case FETCH_TRACKERS_BEGIN:
@@ -40,7 +41,8 @@ export default function productReducer(state = initialState, action) {
       return {
         ...state,
         loading: false,
-        items: action.payload.trackers
+        items: action.payload.trackers,
+        error: null
       };
 
     case REMOVE_TRACKER_SUCCESS:
@@ -52,7 +54,8 @@ export default function productReducer(state = initialState, action) {
       return {
         ...state,
         items: updatedItems,
-        loading: false
+        loading: false,
+        error: null
       };
 
     case FETCH_TRACKERS_FAILURE:
