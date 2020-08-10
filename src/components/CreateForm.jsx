@@ -4,22 +4,17 @@ import { createTrackers } from "../actions/trackerActions";
 import { connect } from "react-redux";
 // react router included
 import { withRouter } from 'react-router-dom';
-import { MockData } from './MockData';
 import { TabContents } from './TabContents';
 // popup add with button
 import Dialog from 'material-ui/Dialog';
 import FlatButton from 'material-ui/FlatButton';
-// declared and defined field types
-const Name = "name";
-const Price = "price";
-const Info = "info";
 // steps declaration
 const CHANNEL = 'channel';
 const FLIGHT = 'flight';
 const BUDGET = 'budget';
 
 export const CreateForm = (props) => {
-	const { containerClass } = props;
+	const { containerClass, loading, error } = props;
 	// formData declaration
 	const formData = { 
 		campaignName: '',
@@ -146,6 +141,11 @@ export const CreateForm = (props) => {
     let popOpen = false;
     if(dataAction && dataAction.popOpen)
     	popOpen = dataAction.popOpen;
+    let modalText = "Loading ..";
+    if(!loading)
+    	modalText = "Tracker created successfully!";
+    if(error && error !== null && error !== "")
+    	modalText = "Network Issue: Failed to create!";
 	return(
 		<div className={containerClass}>
 			<div>
@@ -191,7 +191,7 @@ export const CreateForm = (props) => {
 		          open={popOpen}
 		          onRequestClose={handleClose}
 		        >
-		          Tracker created successfully!
+		          {modalText}
 		        </Dialog>
 			</div>
 		</div>

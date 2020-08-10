@@ -4,7 +4,7 @@ const FLIGHT = 'flight';
 const BUDGET = 'budget';
 
 export const StepTrackers = (props) => {
-	const { handleFormSubmit, data, isTab, handlePrevClick, campaignName, dataAction } = props;
+	const { handleFormSubmit, data, isTab, handlePrevClick, dataAction } = props;
 	let isPrevious = '';
 	if(isTab === FLIGHT || isTab === BUDGET)
 		isPrevious = (

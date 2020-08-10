@@ -25,7 +25,7 @@ export const FlightSection = (props) => {
 					endDate: dataAction.endDate
 				}
 			}))
-
+		// eslint-disable-next-line
 	}, [])
 	// form submit
 	const handleFormSubmit = (e, data) => {

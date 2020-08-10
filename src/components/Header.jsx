@@ -11,14 +11,19 @@ export const Header = (props) => {
 	if(window.innerWidth < 767) {
 		appBarClass = "mobile_appbar";
 	}
+	const appBarOuterClass = appBarClass + ' paddingLeft_13';
+	// eslint-disable-next-line
+	const appBarLeftClass = appBarClass + '_iconElementLeft' + ' display_Inline';
+	// eslint-disable-next-line
+	const appBarRightClass = appBarClass + '_iconElementRight' + ' display_Inline';
 	return(
-		<header className={appBarClass + ' paddingLeft_13'}>
-			<div className={appBarClass + '_iconElementLeft' + ' display_Inline'}>
+		<header className={appBarOuterClass}>
+			<div className={appBarLeftClass}>
 				<Link to="/" style={{ textDecoration: "none", color: "#FFFFFF" }}>
 					<span style={styles.title}>Campaign</span>
 				</Link>
 			</div>
-			<div className={appBarClass + '_iconElementRight' + ' display_Inline'}>
+			<div className={appBarRightClass}>
 				<Link to="/note" style={{ textDecoration: "none", color: "#FFFFFF" }}>
 			   		<div>
 			   			<FlatButton 

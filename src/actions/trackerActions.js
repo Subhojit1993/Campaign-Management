@@ -50,7 +50,6 @@ export function fetchTrackers() {
 
 // post method to create trackers
 export function createTrackers(trackerData) {
-  console.log("track", trackerData);
   return dispatch => {
     dispatch(fetchTrackersBegin());
     return axios.post(trackerUrl, trackerData).then(resp => {
@@ -67,7 +66,6 @@ export function deleteTracker(setId) {
     dispatch(fetchTrackersBegin());
     axios.delete(`${trackerUrl}/${setId}/`)
     .then(resp => {
-        let success = true;
         dispatch(removeTrackersSuccess(setId));
     }).catch(error => {
         dispatch(fetchTrackersFailure(error))

@@ -28,7 +28,7 @@ const TV = 'TV';
 const RADIO = 'Radio';
 
 export const ListTable = (props) => {
-	const { trackers, containerClass } = props;
+	const { trackers, containerClass, loading, error } = props;
 	const [listAction, setListAction] = useState({ popOpen: false, setId: null });
 	const removeClick = (e, data) => {
 		setListAction((prevState) => ({
@@ -53,15 +53,20 @@ export const ListTable = (props) => {
 		}));
 	}
 	let trackersList = (
-		<div className="customizedMsgs">
-			Loading..
-		</div>
+		<TableRow>
+				<TableRowColumn>
+					<div className="customizedMsgs">
+						Loading..
+					</div>
+				</TableRowColumn>
+		</TableRow>
 	);
-	if(trackers.length > 0)
+	if(!loading && trackers.length > 0)
 		trackersList = trackers.map((tracker) => {
 			let channelTypes = '';
 			let trackerOptions = '';
 			let isIcon = WhiteDigital;
+			// eslint-disable-next-line
 			MockData.channels.map(channel => {
 				if(channel.id === tracker.channel){
 					if(channel.text === OUT_OF_HOME)
@@ -72,7 +77,9 @@ export const ListTable = (props) => {
 						isIcon = WhiteRadio;
 				}
 			})
+			// eslint-disable-next-line
 			tracker.channelTypes.map((types, index) => {
+				// eslint-disable-next-line
 				MockData.channelTypes.map(channel => {
 					if(channel.id === types){
 						if(index > 1)
@@ -82,7 +89,9 @@ export const ListTable = (props) => {
 					}
 				})
 			});
+			// eslint-disable-next-line
 			tracker.TrackingOptions.map((option, index) => {
+				// eslint-disable-next-line
 				MockData.trackingOptions.map(trackOption => {
 					if(trackOption.id === option) {
 						if(index > 1)
@@ -99,6 +108,7 @@ export const ListTable = (props) => {
 						   		<div className="icons_outer customizedChannel channelMargin mobile_icon_outer">
 						   			<img 
 										src={isIcon}
+										alt={tracker.campaignName}
 										className={"list_img_icon_size"}
 									/>
 						   		</div>
@@ -145,6 +155,7 @@ export const ListTable = (props) => {
 					   		<div>
 					   			<img
 					   				src={RemoveIcon}
+					   				alt={tracker.campaignName}
 					   				className="customizedRemove"
 					   				onClick={(e) => removeClick(e, tracker)}
 					   			/>
@@ -153,11 +164,25 @@ export const ListTable = (props) => {
 				</TableRow>
 			);
 		});
-	if(trackers.length === 0)
+	if(!loading && trackers.length === 0)
 		trackersList = (
-			<div className="customizedMsgs">
-				List is Empty!
-			</div>
+			<TableRow>
+				<TableRowColumn>
+					<div className="customizedMsgs">
+						List is Empty!
+					</div>
+				</TableRowColumn>
+			</TableRow>
+		);
+	if(error && error !== null && error !== "")
+		trackersList = (
+			<TableRow>
+				<TableRowColumn>
+					<div className="customizedMsgs">
+						Network Issue: Failed to fetch!
+					</div>
+				</TableRowColumn>
+			</TableRow>
 		);
 	const actions = [
       <FlatButton

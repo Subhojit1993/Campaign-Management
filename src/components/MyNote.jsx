@@ -3,16 +3,16 @@ export const MyNote = () => {
 	return(
 		<div className="admin_noteMargin admin_noteFont">
 			<h1>Hello,</h1>
-			<p class="admin_notefontSize">
+			<p className="admin_notefontSize">
 				My name is <strong className="admin_hightLight"> Subhojit Debnath </strong>
 			</p>
-			<p class="admin_notefontSize">
+			<p className="admin_notefontSize">
 				I'm basically from <strong className="admin_hightLight"> Kolkata, West Bengal, India </strong>.
 			</p>
-			<p class="admin_notefontSize">
+			<p className="admin_notefontSize">
 				Presently, working and staying in <strong className="admin_hightLight"> Bengaluru, Karnataka, India </strong>.
 			</p>
-			<p class="admin_notefontSize">
+			<div className="admin_notefontSize">
 				I had started my career in IT Industry in <strong className="admin_hightLight"> February, 2017 </strong> and fell in love with <strong className="admin_hightLight"> Javascript </strong>.
 				<br/><br/>
 				Over the past few years, I
@@ -36,7 +36,7 @@ export const MyNote = () => {
 				I mostly worked with <strong className="admin_hightLight">Frontend Web Technologies</strong> and currently, looking for a <strong className="admin_hightLight">career growth and good opportunities</strong>.
 				<br/><br/>
 				Hope my experience helps in the growth of the organization and really faithful to see the organization environment and growth helps in my learning & my career growth in future as well as I'm looking forward to explore my skills and abilities in the advanced technologies related to <strong className="admin_hightLight">Javascript, React.js, State managements technologies (such as Redux, MobX, etc.)</strong> on a higher scale. 
-			</p>
+			</div>
 		</div>
 	);
 }

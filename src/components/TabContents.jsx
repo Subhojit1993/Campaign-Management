@@ -4,7 +4,7 @@ import { FlightSection } from './FlightSection';
 import { BudgetSection } from './BudgetSection';
 
 export const TabContents = (props) => {
-	const { channel, flight, budget, isTab, handleNextClick, handlePrevClick, dataAction } = props;
+	const { flight, budget, isTab, handleNextClick, handlePrevClick, dataAction } = props;
 	let isChannel = (
 		<div>
 			<ChannelSection

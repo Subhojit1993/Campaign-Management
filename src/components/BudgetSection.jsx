@@ -23,6 +23,7 @@ export const BudgetSection = (props) => {
 					totalImpression: dataAction.totalImpression
 				}
 			}))
+		// eslint-disable-next-line
 	}, [])
 	const handleFormSubmit = (e, data) => {
 		let error_budget = '', error_impression = '';

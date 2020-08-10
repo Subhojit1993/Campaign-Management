@@ -29,7 +29,7 @@ class App extends Component {
       tabSec = '';
     if(window.innerWidth < 767)
       container = '';
-    const { trackers } = this.props;
+    const { trackers, loading, error } = this.props;
     return (
       <MuiThemeProvider>
         <div>
@@ -39,13 +39,22 @@ class App extends Component {
           {tabSec}
           <Switch>
             <Route exact path="/">
-              <ListTableWithRedux containerClass={container} trackers={trackers} />
+              <ListTableWithRedux 
+                containerClass={container} 
+                trackers={trackers} 
+                loading={loading}
+                error={error} 
+              />
             </Route>
             <Route exact path="/note">
               <MyNote containerClass={container} />
             </Route>
             <Route exact path="/create">
-              <CreateFormWithRedux containerClass={container} />
+              <CreateFormWithRedux 
+                containerClass={container}
+                loading={loading}
+                error={error} 
+              />
             </Route>
           </Switch>
         </div>
